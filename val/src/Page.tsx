@@ -36,7 +36,7 @@ export default function Page() {
           <h1 className="text-4xl my-4">Will you be my Valentine?</h1>
           <div>
             <button
-              className='btn-btn success'
+              className='yes'
               style={{ fontSize: yesButtonSize }}
               onClick={() => setYesPressed(true)}
             >
@@ -44,7 +44,7 @@ export default function Page() {
             </button>
             <button
               onClick={handleNoClick}
-              className=" btn-btn danger"
+              className=" no"
             >
               {noCount === 0 ? "No" : getNoButtonText()}
             </button>

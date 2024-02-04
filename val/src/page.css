@@ -5,3 +5,10 @@
     justify-content: center;
     height: 100vh; 
    }
+   .no{
+    background-color: green;
+    size: 15px;
+   }
+   .yes{
+    background-color: red;
+   }
