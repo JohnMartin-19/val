@@ -38,11 +38,11 @@ export default function Page() {
       {yesPressed ? (
         <div>
         <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" alt="img" />
-        <div className="text-4xl font-bold my-4">Ok yay!!!</div>
+        <div className="text-4xl font-bold my-4">Okay Pretty Girl (: !!!</div>
         </div>
       ) : (
         <>
-          <img className="h-[200px]" src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif" alt="img" />
+          <img className="h-[200px]" src="https://gifdb.com/images/thumbnail/dozen-roses-for-beautiful-woman-4dv55nx9ji7p3e86.webp" alt="img" />
           <h1 className="text-4xl my-4">Will you be my Valentine?</h1>
           <div>
             <button
