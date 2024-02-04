@@ -1,5 +1,5 @@
 import React,{ useState } from "react";
-
+import './App.css';
 
 export default function Page() {
   const [noCount, setNoCount] = useState(0);
@@ -13,20 +13,10 @@ export default function Page() {
   const getNoButtonText = () => {
     const phrases = [
       "No",
-      "Are you sure?",
+      "Are you sure,Roselyn?",
       "Really sure?",
-      "Think again!",
-      "Last chance!",
       "Surely not?",
-      "You might regret this!",
-      "Give it another thought!",
-      "Are you absolutely certain?",
-      "This could be a mistake!",
-      "Have a heart!",
-      "Don't be so cold!",
-      "Change of heart?",
-      "Wouldn't you reconsider?",
-      "Is that your final answer?",
+      "I'm gonna cry...",
       "You're breaking my heart ;(",
     ];
 
@@ -34,7 +24,7 @@ export default function Page() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen -mt-16">
+    <div className="valentine">
       {yesPressed ? (
         <div>
         <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" alt="img" />
@@ -46,7 +36,7 @@ export default function Page() {
           <h1 className="text-4xl my-4">Will you be my Valentine?</h1>
           <div>
             <button
-              className={`bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mr-4`}
+              className='btn-btn success'
               style={{ fontSize: yesButtonSize }}
               onClick={() => setYesPressed(true)}
             >
@@ -54,7 +44,7 @@ export default function Page() {
             </button>
             <button
               onClick={handleNoClick}
-              className=" bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+              className=" btn-btn danger"
             >
               {noCount === 0 ? "No" : getNoButtonText()}
             </button>
